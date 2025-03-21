@@ -1,135 +1,73 @@
-/*
-Description:  theme for Classes
-Author:       J Neathawk
-Author URI:   https://knighthawk0811.github.io
-License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl.html
-*/
-
-
-
-/*--------------------------------------------------------------
-selector {
-	layout(position)
-	
-	content(text)
-	
-	design(background)
-	
-	other(z-index)
-}
-----------------------------------------------------------------
->>> COLORS:	  
-----------------------------------------------------------------
-:root {
-  --color-variable: #ffffff;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #201e26;
+    color: #fcfcfd;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-
-----------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Universal
-# General Elements
-# Modal Navigation
-# Navigation
-# Header Area
-# Content Area
-# Footer Area
-# Reusable Classes
-# Other
-# Templates
-# Media Queries
-
---------------------------------------------------------------*/
-
-
-
-/*--------------------------------------------------------------
-# Universal
---------------------------------------------------------------*/
-html * {
-    box-sizing: border-box;
-}
-/*--------------------------------------------------------------
-# General Elements
---------------------------------------------------------------*/
-body
-{
-    margin: 0%;
-}
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-nav ul
-{
-    list-style-type: upper-roman;
-    color: red;
-}
-a:hover
-{
-    color: lightgreen;
-}
-a:active
-{
-    color: green;
-}
-a:visited
-{
-    color: gold;
-}
-
-/*--------------------------------------------------------------
-# Header Area
---------------------------------------------------------------*/
-header
-{
-    background-color: gray;
-    padding: 2%;
-}
-
-/*--------------------------------------------------------------
-# Content Area
---------------------------------------------------------------*/
-main
-{
-    width: calc(70% - 1px);
-    float: left;
+header {
+    background-color: #000000;
     padding: 1rem;
-    border-right: 1px solid #000;
-}
-aside
-{
-    width: 10%;
-    float: left;
-}
-
-/*--------------------------------------------------------------
-# Footer Area
---------------------------------------------------------------*/
-footer
-{
-    clear: both;
-    background-color: gray;
     text-align: center;
 }
 
-/*--------------------------------------------------------------
-# Reusable Classes
---------------------------------------------------------------*/
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+}
 
+nav ul li {
+    display: inline;
+}
 
-/*--------------------------------------------------------------
-# Other
---------------------------------------------------------------*/
+nav a {
+    text-decoration: none;
+    color: #9f9f9f;
+    font-weight: bold;
+}
 
+nav a:hover {
+    color: #eead2b;
+}
 
-/*--------------------------------------------------------------
-# Templates
---------------------------------------------------------------*/
+main {
+    flex-grow: 1;
+    text-align: center;
+    padding: 2rem;
+}
 
+.lorem-img {
+    width: 300px;
+    height: auto;
+    margin-top: 1rem;
+}
 
-/*--------------------------------------------------------------
-# Media Queries
---------------------------------------------------------------*/
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #eead2b;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #9f9f9f;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
