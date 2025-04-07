@@ -1,73 +1,123 @@
+/* Global Layout */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #201e26;
-    color: #fcfcfd;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #201e26;
+  color: #fcfcfd;
 }
 
-header {
-    background-color: #000000;
-    padding: 1rem;
-    text-align: center;
-}
-
+/* Navigation */
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline;
+  display: inline;
 }
 
 nav a {
-    text-decoration: none;
-    color: #9f9f9f;
-    font-weight: bold;
+  text-decoration: none;
+  color: #9f9f9f;
+  font-weight: bold;
 }
 
 nav a:hover {
-    color: #eead2b;
+  color: #eead2b;
 }
 
+/* Main Content */
 main {
-    flex-grow: 1;
-    text-align: center;
-    padding: 2rem;
+  flex-grow: 1;
+  text-align: center;
+  padding: 2rem;
 }
 
+/* Bullet Points */
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  text-align: left;
+  display: inline-block;
+  margin-top: 1rem;
+  color: #fcfcfd;
+}
+
+/* Images */
 .lorem-img {
-    width: 300px;
-    height: auto;
-    margin-top: 1rem;
+  width: 300px;
+  height: auto;
+  margin-top: 1rem;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Buttons */
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background: #eead2b;
-    color: #000000;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #eead2b;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 .button:hover {
-    background: #9f9f9f;
+  background: #9f9f9f;
+  color: #201e26;
 }
 
+/* Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Footer */
 footer {
-    background-color: #000000;
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
+  background-color: #000000;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  color: #fcfcfd;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .lorem-img {
+    width: 90%;
+  }
+}
