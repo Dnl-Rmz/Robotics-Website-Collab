@@ -64,6 +64,7 @@ nav a:hover {
 main {
   text-align: center;
   max-width: 1200px;
+  min-height: 80vh;
   margin: 2rem auto;
   padding: 0 1rem;
   background-color: rgba(0, 0, 0, 0.7);
@@ -196,8 +197,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   color: #aaaaaa;
-  margin-top: auto;
-  margin-bottom: auto;
   font-size: 0.9rem;
 }
 
