@@ -196,7 +196,8 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   color: #aaaaaa;
-  margin-top: 3rem;
+  margin-top: auto;
+  margin-bottom: auto;
   font-size: 0.9rem;
   position: absolute;
   bottom: 0;
