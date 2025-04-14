@@ -199,10 +199,6 @@ footer {
   margin-top: auto;
   margin-bottom: auto;
   font-size: 0.9rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }
 
 /* === RESPONSIVE DESIGN === */
