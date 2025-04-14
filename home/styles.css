@@ -1,4 +1,4 @@
-
+/* === RESET / BASE STYLES === */
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +7,23 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0f0f0f; /* Deep Batman black */
-  color: #f5f5f5;
+  background-color: #121212; /* Deep black background */
+  color: #e0e0e0;
   line-height: 1.6;
+  background-image: url('images/batman-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* === NAVIGATION === */
 header {
-  background-color: #1a1a1a;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 nav ul {
@@ -33,21 +41,25 @@ nav a {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
   color: #ffffff;
+  transform: scale(1.1);
 }
 
 /* === MAIN CONTENT AREA === */
 main {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding-bottom: 2rem;
 }
 
-/* === HEADINGS === */
 h1, h2 {
   color: #fdd835;
   margin-bottom: 1rem;
@@ -97,18 +109,20 @@ a:hover {
   padding: 0.8rem 2rem;
   border-radius: 4px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
   text-decoration: none;
   margin-top: 1rem;
 }
 
 .button:hover {
   background-color: #fff176;
+  transform: scale(1.05);
 }
 
 /* === CONTACT FORM === */
 .contact-form {
-  background-color: #1f1f1f;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
@@ -130,6 +144,7 @@ a:hover {
   border: none;
   background-color: #2b2b2b;
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 
 .contact-form input:focus,
@@ -150,11 +165,12 @@ main ul li {
   margin-bottom: 1rem;
   border-left: 5px solid #fdd835;
   border-radius: 5px;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 main ul li:hover {
   background-color: #3a3a3a;
+  transform: scale(1.02);
 }
 
 main ul li strong {
@@ -165,7 +181,8 @@ main ul li strong {
 footer {
   text-align: center;
   padding: 1.5rem;
-  background-color: #1a1a1a;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
   color: #aaaaaa;
   margin-top: 3rem;
   font-size: 0.9rem;
