@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About / Contact - Lorem Ipsum</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About / Contact - Car Robot</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet"/>
+  <script defer src="script.js"></script>
 </head>
-<body>
+<body class="fade-in">
   <header class="site-header">
     <nav class="navbar">
+      <div class="logo">CarBot</div>
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About / Contact</a></li>
@@ -19,26 +22,29 @@
   </header>
 
   <main class="main-content">
-    <h1>About Lorem Ipsum</h1>
-    <img src="images/about.jpg" alt="Innovation concept" class="lorem-img">
-    <p class="about-text">Lorem Ipsum is a groundbreaking product that transforms the way you interact with technology.</p>
-    
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:contact@loremipsum.com">contact@loremipsum.com</a></p>
-    <p>Phone: <a href="tel:1234567890">123-456-7890</a></p>
-    
-    <form action="submit-form.php" method="post" class="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-      
-      <button type="submit" class="button">Send</button>
-    </form>
+    <section class="section">
+      <h1>About the Car Robot</h1>
+      <p class="about-text">Lorem Ipsum is a groundbreaking car robot that transforms the way you interact with intelligent navigation. With self-pathfinding capabilities, it efficiently determines the best route to reach its destination, adapting to real-world environments.</p>
+    </section>
+
+    <section class="section">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:contact@loremipsum.com">contact@loremipsum.com</a></p>
+      <p>Phone: <a href="tel:1234567890">123-456-7890</a></p>
+
+      <form action="submit-form.php" method="post" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="button">Send</button>
+      </form>
+    </section>
   </main>
 
   <footer class="site-footer">
